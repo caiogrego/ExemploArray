@@ -6,7 +6,7 @@ import  minhasClasses.GerenciaLista;
 
 public class App {
     public static void main(String[] args) throws Exception {
-
+        /*
         // Arrays ("Listas" estáticas de itens)
         Casa[] listaDeCasas;
         int[] valores = {2, 3 ,4 ,5 };
@@ -42,6 +42,7 @@ public class App {
         for (int i = 0; i < 20; i++) {
             if(i<19) System.out.print(" ="); else System.out.println("\n");
         }
+         */
         GerenciaLista GL = new GerenciaLista();
         GL.start();
     }

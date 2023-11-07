@@ -23,7 +23,8 @@ public class GerenciaLista {
     public void start () {
         Scanner scOp = new Scanner(System.in);
         int valorOp = 0;
-        while (true) {
+        boolean continuar = true;
+        while (continuar) {
             exibeOpcoes();
             valorOp = scOp.nextInt();
             switch (valorOp) {
@@ -40,14 +41,19 @@ public class GerenciaLista {
                 case 3:
                     
                     break;
+                case 4:
+                    continuar = false;
+                    scOp.close();
+                    System.out.println("Fim do programa.");
+                    break;
                 default:
                     break;
             }
-            if (valorOp == 4) {
-                scOp.close();
-                System.out.println("Fim do programa.");
-                break;
-            }
+            //if (valorOp == 4) {
+            //    scOp.close();
+            //    System.out.println("Fim do programa.");
+            //    break;
+            //}
         }
     }
 
