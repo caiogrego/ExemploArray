@@ -74,16 +74,13 @@ public class GerenciaLista {
                     it = lista.iterator();
                     while (it.hasNext()) {
                         Contato temp = new Contato(it.next());
-                        // String nome = temp.nome;
-                        // String sobreNome = temp.sobreNome;
-                        // String endereco = temp.endereco;
                         System.out.println("Contato:");
                         System.out.println("\tNome: " + temp.nome);
                         System.out.println("\tSobrenome: " + temp.sobreNome);
                         System.out.println("\tEndereço: " + temp.endereco);
                     }
                     break;
-                case 4:
+                case 4: // Sair do programa
                     continuar = false;
                     sc.close();
                     System.out.println("Fim do programa.");
@@ -94,11 +91,6 @@ public class GerenciaLista {
                     }
                     break;
             }
-            //if (valorOp == 4) {
-            //    scOp.close();
-            //    System.out.println("Fim do programa.");
-            //    break;
-            //}
         }
     }
 
@@ -110,5 +102,4 @@ public class GerenciaLista {
         System.out.println("4 - Sair");
         System.out.print(" > ");
     }
-
 }
