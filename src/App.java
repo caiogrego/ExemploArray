@@ -1,5 +1,6 @@
 import java.util.Queue;
 import java.util.List;
+import java.util.Iterator;
 import java.util.LinkedList;
 import minhasClasses.Casa; // Classe que pode ser o tipo de conteúdo de Arrays e listas dinâmicas
 import  minhasClasses.GerenciaLista;
@@ -28,22 +29,32 @@ public class App {
         String nomeRemovido = listaNomes.remove();
         System.out.println(listaNomes);
         System.out.println("O nome removido da lisata foi: " + nomeRemovido);
-        
+         
         // Lista (Lista dinâmica)
         List<String> novaLista = new LinkedList<>();
-        novaLista.add("Caio");
-        novaLista.add("Ana");
-        novaLista.add("Paulo");
+        novaLista.add("Caio");  // [0]
+        novaLista.add("Ana");   // [1]
+        novaLista.add("Paulo"); // [2]
         System.out.println(novaLista);
+        System.out.println("Item selecionado: " + String.valueOf("Paulo"));
+        novaLista.remove(String.valueOf("Paulo"));
         novaLista.remove(1);
+        Iterator it = novaLista.iterator();
+        while (it.hasNext()) {
+            if ("Ana".equals(it.next())) {
+                it.remove();
+                break;
+            }
+        }
         System.out.println(novaLista);
-
+        
         // Exemplo com Gerencimento da lista:
         for (int i = 0; i < 20; i++) {
             if(i<19) System.out.print(" ="); else System.out.println("\n");
         }
-         */
+        */
         GerenciaLista GL = new GerenciaLista();
         GL.start();
+         
     }
 }
