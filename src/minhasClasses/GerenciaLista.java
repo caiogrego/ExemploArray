@@ -23,6 +23,11 @@ public class GerenciaLista {
         lista.add(c);
     }
 
+    /**
+     * Método utilizado para..
+     * @param mensagem (String) Parametro ..
+     * @return retorna ....
+     */
     private String lerTexto(String mensagem) {
         System.out.print(mensagem);
         String str = sc.nextLine();

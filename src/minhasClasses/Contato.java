@@ -4,7 +4,7 @@ public class Contato {
     String nome;
     String sobreNome;
     String endereco;
-    // ...
+
     public Contato () {
         nome = new String();
         sobreNome = new String();

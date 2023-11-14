@@ -1,9 +1,11 @@
 import java.util.Queue;
+
+import minhasClasses.CasaDeVerao;
 import java.util.List;
 import java.util.Iterator;
 import java.util.LinkedList;
-import minhasClasses.Casa; // Classe que pode ser o tipo de conteúdo de Arrays e listas dinâmicas
-import  minhasClasses.GerenciaLista;
+
+import minhasClasses.GerenciaLista;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -53,6 +55,10 @@ public class App {
             if(i<19) System.out.print(" ="); else System.out.println("\n");
         }
         */
+
+        CasaDeVerao minhaCasa = new CasaDeVerao("Ville Roy, n 01");
+
+        minhaCasa.exibeEndereco();
         GerenciaLista GL = new GerenciaLista();
         GL.start();
          
